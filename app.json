@@ -7,14 +7,14 @@
       "automation"
     ],
     "website": "https://n8n.io",
-    "repository": "https://github.com/n8n-io/n8n-heroku",
+    "repository": "https://github.com/Code-Neptune/n8n-heroku",
     "logo": "https://raw.githubusercontent.com/n8n-io/n8n-heroku/main/n8n_logo.png",
     "success_url": "/",
     "stack": "container",
     "env": {
       "GENERIC_TIMEZONE": {
         "description": "Time Zone to use with Heroku. You can find the name of your timezone for example here: https://momentjs.com/timezone/.",
-        "value": "Europe/Berlin"
+        "value": "Asia/Kolkata"
       },
       "N8N_ENCRYPTION_KEY": {
         "description": "Set the n8n encryption key to a static value to avoid Heroku overriding it (causing authentication to fail).",
@@ -27,12 +27,6 @@
       "PGSSLMODE": {
         "description": "SSL is required to connect to Postgres on Heroku",
         "value": "no-verify"
-      }
-    },
-    "formation": {
-      "web": {
-        "quantity": 1,
-        "size": "eco"
       }
     },
     "addons": [
